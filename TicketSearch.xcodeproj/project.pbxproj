@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4580E1A22C04E5D2001A9E71 /* JobSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1A12C04E5D2001A9E71 /* JobSearchApp.swift */; };
+		4580E1A22C04E5D2001A9E71 /* TicketSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1A12C04E5D2001A9E71 /* TicketSearchApp.swift */; };
 		4580E1A42C04E5D2001A9E71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1A32C04E5D2001A9E71 /* ContentView.swift */; };
 		4580E1A62C04E5D3001A9E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4580E1A52C04E5D3001A9E71 /* Assets.xcassets */; };
 		4580E1A92C04E5D4001A9E71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4580E1A82C04E5D4001A9E71 /* Preview Assets.xcassets */; };
@@ -26,8 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4580E19E2C04E5D2001A9E71 /* JobSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4580E1A12C04E5D2001A9E71 /* JobSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchApp.swift; sourceTree = "<group>"; };
+		4580E19E2C04E5D2001A9E71 /* TicketSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4580E1A12C04E5D2001A9E71 /* TicketSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSearchApp.swift; sourceTree = "<group>"; };
 		4580E1A32C04E5D2001A9E71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4580E1A52C04E5D3001A9E71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4580E1A82C04E5D4001A9E71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		4580E1952C04E5D2001A9E71 = {
 			isa = PBXGroup;
 			children = (
-				4580E1A02C04E5D2001A9E71 /* JobSearch */,
+				4580E1A02C04E5D2001A9E71 /* TicketSearch */,
 				4580E19F2C04E5D2001A9E71 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,12 +67,12 @@
 		4580E19F2C04E5D2001A9E71 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4580E19E2C04E5D2001A9E71 /* JobSearch.app */,
+				4580E19E2C04E5D2001A9E71 /* TicketSearch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4580E1A02C04E5D2001A9E71 /* JobSearch */ = {
+		4580E1A02C04E5D2001A9E71 /* TicketSearch */ = {
 			isa = PBXGroup;
 			children = (
 				45A662462C060C0100BD41CF /* Extentsions */,
@@ -80,11 +80,11 @@
 				4580E1AF2C04E6D1001A9E71 /* Models */,
 				4580E1B12C04E6E7001A9E71 /* ViewModels */,
 				4580E1B02C04E6DF001A9E71 /* View */,
-				4580E1A12C04E5D2001A9E71 /* JobSearchApp.swift */,
+				4580E1A12C04E5D2001A9E71 /* TicketSearchApp.swift */,
 				4580E1A52C04E5D3001A9E71 /* Assets.xcassets */,
 				4580E1A72C04E5D4001A9E71 /* Preview Content */,
 			);
-			path = JobSearch;
+			path = TicketSearch;
 			sourceTree = "<group>";
 		};
 		4580E1A72C04E5D4001A9E71 /* Preview Content */ = {
@@ -154,9 +154,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4580E19D2C04E5D2001A9E71 /* JobSearch */ = {
+		4580E19D2C04E5D2001A9E71 /* TicketSearch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4580E1AC2C04E5D4001A9E71 /* Build configuration list for PBXNativeTarget "JobSearch" */;
+			buildConfigurationList = 4580E1AC2C04E5D4001A9E71 /* Build configuration list for PBXNativeTarget "TicketSearch" */;
 			buildPhases = (
 				4580E19A2C04E5D2001A9E71 /* Sources */,
 				4580E19B2C04E5D2001A9E71 /* Frameworks */,
@@ -166,9 +166,9 @@
 			);
 			dependencies = (
 			);
-			name = JobSearch;
+			name = TicketSearch;
 			productName = JobSearch;
-			productReference = 4580E19E2C04E5D2001A9E71 /* JobSearch.app */;
+			productReference = 4580E19E2C04E5D2001A9E71 /* TicketSearch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4580E1992C04E5D2001A9E71 /* Build configuration list for PBXProject "JobSearch" */;
+			buildConfigurationList = 4580E1992C04E5D2001A9E71 /* Build configuration list for PBXProject "TicketSearch" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -199,7 +199,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4580E19D2C04E5D2001A9E71 /* JobSearch */,
+				4580E19D2C04E5D2001A9E71 /* TicketSearch */,
 			);
 		};
 /* End PBXProject section */
@@ -228,7 +228,7 @@
 				4580E1CA2C04F5D4001A9E71 /* TabCoordinator.swift in Sources */,
 				4580E1C12C04EA2A001A9E71 /* SubscriptionsView.swift in Sources */,
 				4580E1C82C04F504001A9E71 /* TabBarViewModel.swift in Sources */,
-				4580E1A22C04E5D2001A9E71 /* JobSearchApp.swift in Sources */,
+				4580E1A22C04E5D2001A9E71 /* TicketSearchApp.swift in Sources */,
 				4580E1BF2C04EA13001A9E71 /* ShortView.swift in Sources */,
 				4580E1B72C04E86E001A9E71 /* ContentViewViewModel.swift in Sources */,
 				4580E1BD2C04E9FB001A9E71 /* HotelsView.swift in Sources */,
@@ -362,7 +362,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"JobSearch/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TicketSearch/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -375,7 +375,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.practica.JobSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practica.TicketSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -390,7 +390,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"JobSearch/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TicketSearch/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -403,7 +403,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.practica.JobSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practica.TicketSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -414,7 +414,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4580E1992C04E5D2001A9E71 /* Build configuration list for PBXProject "JobSearch" */ = {
+		4580E1992C04E5D2001A9E71 /* Build configuration list for PBXProject "TicketSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4580E1AA2C04E5D4001A9E71 /* Debug */,
@@ -423,7 +423,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4580E1AC2C04E5D4001A9E71 /* Build configuration list for PBXNativeTarget "JobSearch" */ = {
+		4580E1AC2C04E5D4001A9E71 /* Build configuration list for PBXNativeTarget "TicketSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4580E1AD2C04E5D4001A9E71 /* Debug */,

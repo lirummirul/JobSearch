@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct JobSearchApp: App {
+struct TicketSearchApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(coordinator: AppCoordinator())
