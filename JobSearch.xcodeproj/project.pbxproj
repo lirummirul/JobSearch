@@ -14,14 +14,15 @@
 		4580E1B52C04E7DB001A9E71 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1B42C04E7DB001A9E71 /* AppCoordinator.swift */; };
 		4580E1B72C04E86E001A9E71 /* ContentViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1B62C04E86E001A9E71 /* ContentViewViewModel.swift */; };
 		4580E1B92C04E897001A9E71 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1B82C04E897001A9E71 /* Job.swift */; };
-		4580E1BB2C04E9EB001A9E71 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1BA2C04E9EB001A9E71 /* SearchView.swift */; };
-		4580E1BD2C04E9FB001A9E71 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1BC2C04E9FB001A9E71 /* FavoritesView.swift */; };
-		4580E1BF2C04EA13001A9E71 /* ResponsesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1BE2C04EA13001A9E71 /* ResponsesView.swift */; };
-		4580E1C12C04EA2A001A9E71 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1C02C04EA2A001A9E71 /* MessagesView.swift */; };
+		4580E1BB2C04E9EB001A9E71 /* AirTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1BA2C04E9EB001A9E71 /* AirTicketView.swift */; };
+		4580E1BD2C04E9FB001A9E71 /* HotelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1BC2C04E9FB001A9E71 /* HotelsView.swift */; };
+		4580E1BF2C04EA13001A9E71 /* ShortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1BE2C04EA13001A9E71 /* ShortView.swift */; };
+		4580E1C12C04EA2A001A9E71 /* SubscriptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1C02C04EA2A001A9E71 /* SubscriptionsView.swift */; };
 		4580E1C32C04EA39001A9E71 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1C22C04EA39001A9E71 /* ProfileView.swift */; };
 		4580E1C62C04F4F3001A9E71 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1C52C04F4F3001A9E71 /* TabItem.swift */; };
 		4580E1C82C04F504001A9E71 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1C72C04F504001A9E71 /* TabBarViewModel.swift */; };
 		4580E1CA2C04F5D4001A9E71 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1C92C04F5D4001A9E71 /* TabCoordinator.swift */; };
+		45A662482C060C6F00BD41CF /* AppCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A662472C060C6F00BD41CF /* AppCoordinatorProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,14 +34,15 @@
 		4580E1B42C04E7DB001A9E71 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		4580E1B62C04E86E001A9E71 /* ContentViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewViewModel.swift; sourceTree = "<group>"; };
 		4580E1B82C04E897001A9E71 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
-		4580E1BA2C04E9EB001A9E71 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		4580E1BC2C04E9FB001A9E71 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
-		4580E1BE2C04EA13001A9E71 /* ResponsesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsesView.swift; sourceTree = "<group>"; };
-		4580E1C02C04EA2A001A9E71 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		4580E1BA2C04E9EB001A9E71 /* AirTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirTicketView.swift; sourceTree = "<group>"; };
+		4580E1BC2C04E9FB001A9E71 /* HotelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsView.swift; sourceTree = "<group>"; };
+		4580E1BE2C04EA13001A9E71 /* ShortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortView.swift; sourceTree = "<group>"; };
+		4580E1C02C04EA2A001A9E71 /* SubscriptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsView.swift; sourceTree = "<group>"; };
 		4580E1C22C04EA39001A9E71 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4580E1C52C04F4F3001A9E71 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		4580E1C72C04F504001A9E71 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 		4580E1C92C04F5D4001A9E71 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		45A662472C060C6F00BD41CF /* AppCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		4580E1A02C04E5D2001A9E71 /* JobSearch */ = {
 			isa = PBXGroup;
 			children = (
+				45A662462C060C0100BD41CF /* Extentsions */,
 				4580E1B32C04E79E001A9E71 /* Coordinators */,
 				4580E1AF2C04E6D1001A9E71 /* Models */,
 				4580E1B12C04E6E7001A9E71 /* ViewModels */,
@@ -105,10 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				4580E1A32C04E5D2001A9E71 /* ContentView.swift */,
-				4580E1BA2C04E9EB001A9E71 /* SearchView.swift */,
-				4580E1BC2C04E9FB001A9E71 /* FavoritesView.swift */,
-				4580E1BE2C04EA13001A9E71 /* ResponsesView.swift */,
-				4580E1C02C04EA2A001A9E71 /* MessagesView.swift */,
+				4580E1BA2C04E9EB001A9E71 /* AirTicketView.swift */,
+				4580E1BC2C04E9FB001A9E71 /* HotelsView.swift */,
+				4580E1BE2C04EA13001A9E71 /* ShortView.swift */,
+				4580E1C02C04EA2A001A9E71 /* SubscriptionsView.swift */,
 				4580E1C22C04EA39001A9E71 /* ProfileView.swift */,
 			);
 			path = View;
@@ -126,10 +129,26 @@
 		4580E1B32C04E79E001A9E71 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				45A662452C060B7E00BD41CF /* Protocols */,
 				4580E1B42C04E7DB001A9E71 /* AppCoordinator.swift */,
 				4580E1C92C04F5D4001A9E71 /* TabCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		45A662452C060B7E00BD41CF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				45A662472C060C6F00BD41CF /* AppCoordinatorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		45A662462C060C0100BD41CF /* Extentsions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentsions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,17 +221,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A662482C060C6F00BD41CF /* AppCoordinatorProtocol.swift in Sources */,
 				4580E1B52C04E7DB001A9E71 /* AppCoordinator.swift in Sources */,
 				4580E1A42C04E5D2001A9E71 /* ContentView.swift in Sources */,
 				4580E1C32C04EA39001A9E71 /* ProfileView.swift in Sources */,
 				4580E1CA2C04F5D4001A9E71 /* TabCoordinator.swift in Sources */,
-				4580E1C12C04EA2A001A9E71 /* MessagesView.swift in Sources */,
+				4580E1C12C04EA2A001A9E71 /* SubscriptionsView.swift in Sources */,
 				4580E1C82C04F504001A9E71 /* TabBarViewModel.swift in Sources */,
 				4580E1A22C04E5D2001A9E71 /* JobSearchApp.swift in Sources */,
-				4580E1BF2C04EA13001A9E71 /* ResponsesView.swift in Sources */,
+				4580E1BF2C04EA13001A9E71 /* ShortView.swift in Sources */,
 				4580E1B72C04E86E001A9E71 /* ContentViewViewModel.swift in Sources */,
-				4580E1BD2C04E9FB001A9E71 /* FavoritesView.swift in Sources */,
-				4580E1BB2C04E9EB001A9E71 /* SearchView.swift in Sources */,
+				4580E1BD2C04E9FB001A9E71 /* HotelsView.swift in Sources */,
+				4580E1BB2C04E9EB001A9E71 /* AirTicketView.swift in Sources */,
 				4580E1B92C04E897001A9E71 /* Job.swift in Sources */,
 				4580E1C62C04F4F3001A9E71 /* TabItem.swift in Sources */,
 			);

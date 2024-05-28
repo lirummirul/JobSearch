@@ -8,60 +8,60 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var viewModel = TabBarViewModel()
+    @ObservedObject var coordinator : AppCoordinator
 
         var body: some View {
-            ZStack(alignment: .bottom) {
-            TabView(selection: $viewModel.selectedIndex) {
-                SearchView()
-                    .tag(0)
-                FavoritesView()
-                    .tag(1)
-                ResponsesView()
-                    .tag(2)
-                MessagesView()
-                    .tag(3)
-                ProfileView()
-                    .tag(4)
-            }
-            .ignoresSafeArea()
 
-                        HStack(spacing: 0) {
-                            ForEach(viewModel.tabItems, id: \.self) { tab in
-                                TabBarItemView(tab: tab, viewModel: self.viewModel)
-                            }
+            VStack {
+                        Spacer()
+                        HStack{
+                           content
                         }
-                        .frame(height: 50)
-                        .background(Color.white)
-                        .ignoresSafeArea()
+                        
+                        .frame( height: 50)
+                        .padding(12)
+                        .background(.white)
+                        .mask(RoundedRectangle(cornerRadius: 34, style: .continuous))
+                        .shadow(color: Color("Background 2").opacity(0.3), radius: 20, x: 0, y: 20)
+
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 24, style: .continuous)
+                                .stroke(.linearGradient(colors: [.white.opacity(0.5), .white.opacity(0.1)], startPoint: .topLeading, endPoint: .bottomTrailing))
+                        )
+
                     }
+
+                    .ignoresSafeArea()
+                   
         }
     
-    private struct TabBarItemView: View {
-           let tab: TabItem
-           @ObservedObject var viewModel: TabBarViewModel
-
-           var body: some View {
-               VStack {
-                   Image(systemName: tab.image)
-                       .resizable()
-                       .scaledToFit()
-                       .frame(width: 24, height: 24)
-                       .foregroundColor(viewModel.selectedIndex == tab.tag ? .blue : .gray)
-                   Text(tab.title)
-                       .font(.system(size: 12))
-                       .foregroundColor(viewModel.selectedIndex == tab.tag ? .blue : .gray)
-               }
-               .padding()
-               .onTapGesture {
-                   viewModel.selectTab(index: tab.tag)
-               }
-           }
-       }
+    var content : some View{
+        
+        ForEach(tabItems) { item in
+            Spacer()
+            Button{
+//                self.coordinator.crossToMain()
+//                self.coordinator.crossToTab(tab: item.tab)
+            } label: {
+                
+                ZStack{
+                    Circle()
+                        .frame(width : 50, height: 50)
+                        .foregroundColor(coordinator.tabCoordinator == item.tab ? Color("e8e8e8")  : .white)
+                    Image(systemName: item.icon)
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                        .opacity(coordinator.tabCoordinator == item.tab ? 1 : 0.7)
+                    
+                }
+            }
+            Spacer()
+        }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(coordinator: AppCoordinator())
     }
 }

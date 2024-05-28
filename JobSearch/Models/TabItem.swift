@@ -7,8 +7,16 @@
 
 import Foundation
 
-struct TabItem {
-    let title: String
-    let image: String
-    let tag: Int
+struct TabItem: Identifiable {
+    var id = UUID()
+    var icon: String
+    var tab: Tab
+}
+
+enum Tab: String {
+    case ticket
+    case hotel
+    case short
+    case sub
+    case person
 }
