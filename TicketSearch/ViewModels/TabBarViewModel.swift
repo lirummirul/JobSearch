@@ -7,10 +7,10 @@
 
 
 var tabItems = [
-    TabItem(icon: "airplane", tab: .ticket),
-    TabItem(icon: "bed.double", tab: .hotel),
-    TabItem(icon: "mappin.and.ellipse", tab: .short),
-    TabItem(icon: "bell", tab: .sub),
-    TabItem(icon: "person", tab: .person)
+    TabItem(icon: "air-icon", tab: .ticket),
+    TabItem(icon: "hotel-icon", tab: .hotel),
+    TabItem(icon: "short-icon", tab: .short),
+    TabItem(icon: "sub-icon", tab: .sub),
+    TabItem(icon: "profile-icon", tab: .person)
     
 ]

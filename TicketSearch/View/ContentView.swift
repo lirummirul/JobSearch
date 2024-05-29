@@ -48,9 +48,9 @@ struct ContentView: View {
                     Circle()
                         .frame(width : 50, height: 50)
                         .foregroundColor(coordinator.tabCoordinator == item.tab ? Color("e8e8e8")  : .white)
-                    Image(systemName: item.icon)
+                    Image(item.icon)
                         .resizable()
-                        .frame(width: 20, height: 20)
+                        .frame(width: 25, height: 25)
                         .opacity(coordinator.tabCoordinator == item.tab ? 1 : 0.7)
                     
                 }

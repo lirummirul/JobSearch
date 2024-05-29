@@ -23,6 +23,7 @@
 		4580E1C82C04F504001A9E71 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1C72C04F504001A9E71 /* TabBarViewModel.swift */; };
 		4580E1CA2C04F5D4001A9E71 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1C92C04F5D4001A9E71 /* TabCoordinator.swift */; };
 		45A662482C060C6F00BD41CF /* AppCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A662472C060C6F00BD41CF /* AppCoordinatorProtocol.swift */; };
+		45CF13EE2C078EAD00E77FC9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CF13ED2C078EAD00E77FC9 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		4580E1C72C04F504001A9E71 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 		4580E1C92C04F5D4001A9E71 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
 		45A662472C060C6F00BD41CF /* AppCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		45CF13ED2C078EAD00E77FC9 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +109,8 @@
 		4580E1B02C04E6DF001A9E71 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				45CF13EA2C078CCC00E77FC9 /* MainView */,
 				4580E1A32C04E5D2001A9E71 /* ContentView.swift */,
-				4580E1BA2C04E9EB001A9E71 /* AirTicketView.swift */,
 				4580E1BC2C04E9FB001A9E71 /* HotelsView.swift */,
 				4580E1BE2C04EA13001A9E71 /* ShortView.swift */,
 				4580E1C02C04EA2A001A9E71 /* SubscriptionsView.swift */,
@@ -149,6 +151,15 @@
 			children = (
 			);
 			path = Extentsions;
+			sourceTree = "<group>";
+		};
+		45CF13EA2C078CCC00E77FC9 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				4580E1BA2C04E9EB001A9E71 /* AirTicketView.swift */,
+				45CF13ED2C078EAD00E77FC9 /* CustomTextField.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 				4580E1BB2C04E9EB001A9E71 /* AirTicketView.swift in Sources */,
 				4580E1B92C04E897001A9E71 /* Job.swift in Sources */,
 				4580E1C62C04F4F3001A9E71 /* TabItem.swift in Sources */,
+				45CF13EE2C078EAD00E77FC9 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

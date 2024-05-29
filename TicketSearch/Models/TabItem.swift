@@ -14,9 +14,13 @@ struct TabItem: Identifiable {
 }
 
 enum Tab: String {
-    case ticket
-    case hotel
-    case short
-    case sub
-    case person
+    case ticket = "air-icon"
+    case hotel = "hotel-icon"
+    case short = "short-icon"
+    case sub = "sub-icon"
+    case person = "profile-icon"
+    
+    var iconName: String {
+        rawValue
+    }
 }
