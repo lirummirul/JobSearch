@@ -44,16 +44,15 @@ struct CustomTextField: View {
                     }
                 }
                 .background(textF)
+                .font(Font.custom("Montserrat-Medium", size: 15))
                 .cornerRadius(20)
                 .padding(.leading, 30)
                 .foregroundColor(.white)
                     
             }
-            .textFieldStyle(RoundedBorderTextFieldStyle())
+//            .textFieldStyle(RoundedBorderTextFieldStyle())
             .padding(.trailing, 30)
-            
         }
-       
     }
 }
 
@@ -65,7 +64,7 @@ struct CustomTextField_Previews: PreviewProvider {
 
             CustomTextField(departurePlace: departurePlace, destinationPlace: destinationPlace)
                 .previewLayout(.fixed(width: 375, height: 100))
-                .background(Color.black)
+//                .background(Color.black)
         }
     }
 }

@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @ObservedObject var coordinator : AppCoordinator
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.black
+                .ignoresSafeArea()
+            Text("Hello, World!")
+                .foregroundColor(.white)
+        }
     }
 }
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView(coordinator: AppCoordinator())
     }
 }

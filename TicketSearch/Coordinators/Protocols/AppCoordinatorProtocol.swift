@@ -12,15 +12,11 @@ protocol AppCoordinatorProtocol : AnyObject {
     
     init()
     
-    func navigateToTab(_ tab: Tab)
-    
 //    func start()
 //    func auth()
 //    func showMain()
 }
 
-protocol AppInput: AnyObject {
-    func signLoginSuccessfully()
-}
+protocol AppInput: AnyObject { }
 
 protocol AppOutput: AnyObject { }

@@ -7,14 +7,21 @@
 
 import SwiftUI
 
-struct FavoritesView: View {
+struct HotelsView: View {
+    @ObservedObject var coordinator : AppCoordinator
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.black
+                .ignoresSafeArea()
+            Text("Hello, World!")
+                .foregroundColor(.white)
+        }
     }
 }
 
-struct FavoritesView_Previews: PreviewProvider {
+struct HotelsView_Previews: PreviewProvider {
     static var previews: some View {
-        FavoritesView()
+        HotelsView(coordinator: AppCoordinator())
     }
 }

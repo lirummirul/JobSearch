@@ -13,11 +13,11 @@ class AppCoordinator: ObservableObject, AppCoordinatorProtocol {
     required init() {
         self.tabCoordinator = Tab.ticket
     }
-
-    func navigateToTab(_ tab: Tab) {
+    
+    func crossToTab(tab : Tab){
         tabCoordinator = tab
     }
-    
+
 //    func start() {
 //
 //    }
@@ -32,10 +32,6 @@ class AppCoordinator: ObservableObject, AppCoordinatorProtocol {
 //
 }
 
-extension AppCoordinator: AppInput {
-    func signLoginSuccessfully() {
-//        showMain()
-    }
-}
+extension AppCoordinator: AppInput { }
 
 extension AppCoordinator: AppOutput { }

@@ -7,14 +7,21 @@
 
 import SwiftUI
 
-struct ResponsesView: View {
+struct ShortView: View {
+    @ObservedObject var coordinator : AppCoordinator
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.black
+                .ignoresSafeArea()
+            Text("Hello, World!")
+                .foregroundColor(.white)
+        }
     }
 }
 
-struct ResponsesView_Previews: PreviewProvider {
+struct ShortView_Previews: PreviewProvider {
     static var previews: some View {
-        ResponsesView()
+        ShortView(coordinator: AppCoordinator())
     }
 }

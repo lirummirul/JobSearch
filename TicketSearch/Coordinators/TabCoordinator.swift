@@ -7,23 +7,34 @@
 
 import SwiftUI
 
-//class TabCoordinator: ObservableObject {
-//    @Published var currentView: CurrentView = .home
-//
-//    enum CurrentView {
-//        case home
-//        case jobs
-//        case companies
-//        case favorites
-//        case profile
-//    }
-//
-//    func navigateToJobs() {
-//        currentView = .jobs
-//    }
-//
-//    func navigateToCompanies() {
-//        currentView = .companies
-//    }
-//
-//}
+struct TabCoordinator: View {
+    @ObservedObject var coordinator : AppCoordinator
+    
+    var body: some View {
+        ZStack{
+            switch coordinator.tabCoordinator{
+            case .ticket:
+                AirTicketView(coordinator: coordinator)
+                
+            case .hotel:
+                HotelsView(coordinator: coordinator)
+            case .short:
+                ShortView(coordinator: coordinator)
+            case .sub:
+                SubscriptionView(coordinator: coordinator)
+            case .person:
+                ProfileView(coordinator: coordinator)
+            }
+            
+            ContentView(coordinator: coordinator)
+
+        }
+        .ignoresSafeArea()
+    }
+}
+
+struct TabCoordinator_Previews: PreviewProvider {
+    static var previews: some View {
+        TabCoordinator(coordinator: AppCoordinator())
+    }
+}
