@@ -2,7 +2,7 @@
 //  CustomTextField.swift
 //  TicketSearch
 //
-//  Created by Lambert Lani on 5/29/24.
+//  Created by Lambert Lani on 5/30/24.
 //
 
 import SwiftUI
@@ -11,37 +11,55 @@ import Combine
 struct CustomTextField: View {
     @Binding var departurePlace: String
     @Binding var destinationPlace: String
+    var textF: Color = Color(CGColor(red: 62/255, green: 63/255, blue: 67/255, alpha: 1))
+    var backTF: Color = Color(CGColor(red: 47/255, green: 47/255, blue: 53/255, alpha: 1))
 
     var body: some View {
-        VStack(spacing: 0) {
-            // Поле ввода места отправления
-            TextField("Откуда - Москва", text: $departurePlace)
-                .padding(.leading, 16)
-                .frame(height: 56)
-                .background(Color(.systemGray5))
-                .cornerRadius(8)
+        ZStack {
+           Rectangle()
+               .fill(backTF)
+               .frame(height: 160)
+               .cornerRadius(20)
+               .padding(.horizontal)
+            
+                
+            VStack(alignment: .leading, spacing: 0) {
+                HStack(spacing: 0) {
+                    Image("search-icon")
+                        .padding(.leading, 5)
+                        .frame(width: 50)
+                    
+                    VStack(alignment: .leading, spacing: 0) {
+                        TextField("Откуда - Москва", text: $departurePlace)
+                            .padding(.init(top: 5, leading: 16, bottom: 5, trailing: 30))
+                            .frame(height: 56)
 
-            // Разделительная полоска
-            Rectangle()
-                  .fill(Color(.systemGray4))
-                  .frame(height: 1)
-                  .padding(.leading, 16)
-                  .padding(.trailing, 16)
-
-            // Поле ввода места назначения
-            TextField("Куда - Сочи", text: $destinationPlace)
-                .padding(.trailing, 16)
-                .frame(height: 56)
-                .background(Color(.systemGray5))
-                .cornerRadius(8)
+                        Rectangle()
+                            .fill(backTF)
+                            .frame(height: 2)
+                        
+                        TextField("Куда - Сочи", text: $destinationPlace)
+                            .padding(.init(top: 5, leading: 16, bottom: 5, trailing: 30))
+                            .frame(height: 56)
+                    }
+                }
+                .background(textF)
+                .cornerRadius(20)
+                .padding(.leading, 30)
+                .foregroundColor(.white)
+                    
+            }
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .padding(.trailing, 30)
+            
         }
+       
     }
 }
 
 struct CustomTextField_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            // Временные переменные для превью-представления
             let departurePlace = Binding.constant("")
             let destinationPlace = Binding.constant("")
 

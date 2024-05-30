@@ -22,8 +22,11 @@
 		4580E1C62C04F4F3001A9E71 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1C52C04F4F3001A9E71 /* TabItem.swift */; };
 		4580E1C82C04F504001A9E71 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1C72C04F504001A9E71 /* TabBarViewModel.swift */; };
 		4580E1CA2C04F5D4001A9E71 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580E1C92C04F5D4001A9E71 /* TabCoordinator.swift */; };
+		45A0C1DF2C08AB3F0075E511 /* OffersCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0C1DE2C08AB3F0075E511 /* OffersCarouselView.swift */; };
+		45A0C1E12C08AB4D0075E511 /* OffersCarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0C1E02C08AB4D0075E511 /* OffersCarouselViewModel.swift */; };
+		45A0C1E32C08AB600075E511 /* CustomTextFieldViewModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0C1E22C08AB600075E511 /* CustomTextFieldViewModel .swift */; };
+		45A0C1E52C08BBD40075E511 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0C1E42C08BBD40075E511 /* CustomTextField.swift */; };
 		45A662482C060C6F00BD41CF /* AppCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A662472C060C6F00BD41CF /* AppCoordinatorProtocol.swift */; };
-		45CF13EE2C078EAD00E77FC9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CF13ED2C078EAD00E77FC9 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,8 +46,11 @@
 		4580E1C52C04F4F3001A9E71 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		4580E1C72C04F504001A9E71 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 		4580E1C92C04F5D4001A9E71 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		45A0C1DE2C08AB3F0075E511 /* OffersCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCarouselView.swift; sourceTree = "<group>"; };
+		45A0C1E02C08AB4D0075E511 /* OffersCarouselViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCarouselViewModel.swift; sourceTree = "<group>"; };
+		45A0C1E22C08AB600075E511 /* CustomTextFieldViewModel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomTextFieldViewModel .swift"; sourceTree = "<group>"; };
+		45A0C1E42C08BBD40075E511 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		45A662472C060C6F00BD41CF /* AppCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorProtocol.swift; sourceTree = "<group>"; };
-		45CF13ED2C078EAD00E77FC9 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,8 @@
 			children = (
 				4580E1B62C04E86E001A9E71 /* ContentViewViewModel.swift */,
 				4580E1C72C04F504001A9E71 /* TabBarViewModel.swift */,
+				45A0C1E02C08AB4D0075E511 /* OffersCarouselViewModel.swift */,
+				45A0C1E22C08AB600075E511 /* CustomTextFieldViewModel .swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -157,7 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				4580E1BA2C04E9EB001A9E71 /* AirTicketView.swift */,
-				45CF13ED2C078EAD00E77FC9 /* CustomTextField.swift */,
+				45A0C1E42C08BBD40075E511 /* CustomTextField.swift */,
+				45A0C1DE2C08AB3F0075E511 /* OffersCarouselView.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -233,20 +242,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				45A662482C060C6F00BD41CF /* AppCoordinatorProtocol.swift in Sources */,
+				45A0C1DF2C08AB3F0075E511 /* OffersCarouselView.swift in Sources */,
 				4580E1B52C04E7DB001A9E71 /* AppCoordinator.swift in Sources */,
 				4580E1A42C04E5D2001A9E71 /* ContentView.swift in Sources */,
 				4580E1C32C04EA39001A9E71 /* ProfileView.swift in Sources */,
+				45A0C1E12C08AB4D0075E511 /* OffersCarouselViewModel.swift in Sources */,
 				4580E1CA2C04F5D4001A9E71 /* TabCoordinator.swift in Sources */,
 				4580E1C12C04EA2A001A9E71 /* SubscriptionsView.swift in Sources */,
+				45A0C1E52C08BBD40075E511 /* CustomTextField.swift in Sources */,
 				4580E1C82C04F504001A9E71 /* TabBarViewModel.swift in Sources */,
 				4580E1A22C04E5D2001A9E71 /* TicketSearchApp.swift in Sources */,
+				45A0C1E32C08AB600075E511 /* CustomTextFieldViewModel .swift in Sources */,
 				4580E1BF2C04EA13001A9E71 /* ShortView.swift in Sources */,
 				4580E1B72C04E86E001A9E71 /* ContentViewViewModel.swift in Sources */,
 				4580E1BD2C04E9FB001A9E71 /* HotelsView.swift in Sources */,
 				4580E1BB2C04E9EB001A9E71 /* AirTicketView.swift in Sources */,
 				4580E1B92C04E897001A9E71 /* Job.swift in Sources */,
 				4580E1C62C04F4F3001A9E71 /* TabItem.swift in Sources */,
-				45CF13EE2C078EAD00E77FC9 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
